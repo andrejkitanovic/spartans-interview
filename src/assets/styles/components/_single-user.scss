@@ -1,0 +1,40 @@
+@import '../utils';
+
+$description-lines-to-show: 2;
+
+.single-user {
+	display: block;
+	height: 115px;
+	background-color: #1d2c3d;
+	border-radius: 10px;
+	margin-bottom: 12px;
+	padding: 15px;
+	border: 2px solid transparent;
+
+	&.active {
+		border: 2px solid $primary-color;
+	}
+
+	&__avatar {
+		width: 80px;
+		height: 80px;
+		border-radius: 10px;
+		border: 2px solid #32373c;
+		overflow: hidden;
+        
+		img {
+			width: 100%;
+		}
+	}
+
+	&__name {
+		margin: 5px 0 20px;
+	}
+
+	&__description {
+		font-size: 12px;
+		overflow: hidden;
+		-webkit-line-clamp: $description-lines-to-show;
+		@extend %lines-overflow;
+	}
+}

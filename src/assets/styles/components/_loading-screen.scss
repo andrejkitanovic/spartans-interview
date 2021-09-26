@@ -1,0 +1,24 @@
+@import '../utils';
+
+.loading-screen {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: $z-loader;
+
+	&__circle {
+		border-radius: 50%;
+		width: 200px;
+		height: 200px;
+		border: 25px solid $primary-color;
+		border-top-color: transparent;
+		animation: loader-spin 1s linear infinite;
+	}
+}

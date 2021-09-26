@@ -1,0 +1,40 @@
+@import '../utils';
+
+.home-page {
+	padding-top: 60px;
+
+	&__results {
+		margin-bottom: 20px;
+	}
+
+	&__container {
+		overflow: scroll;
+		height: calc(100% - 20px);
+
+		&.users{
+			height: calc(100% - 90px);
+		}
+	}
+
+	&__users,
+	&__repos {
+		border: 2px solid $secondary-color;
+		height: 80vh;
+		max-height: 800px;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	&__users {
+		padding: 15px;
+	}
+
+	&__users-pagination{
+		height: 50px;
+		margin-bottom: 20px;
+	}
+
+	&__repos {
+		padding: 20px 24px;
+	}
+}

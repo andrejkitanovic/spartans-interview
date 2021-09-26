@@ -1,0 +1,8 @@
+{
+	"Home": {
+		"searchDelay": 1000,
+		"searchAfter": 2,
+		"usersPerPage": 5,
+		"maximumUserPage":200
+	}
+}

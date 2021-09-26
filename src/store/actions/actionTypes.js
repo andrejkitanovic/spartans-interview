@@ -1,0 +1,12 @@
+export const START_LOADING = 'START_LOADING';
+export const FINISH_LOADING = 'FINISH_LOADING';
+
+export const SUCCESS_NOTIFICATION = 'SUCCESS_NOTIFICATION';
+export const ERROR_NOTIFICATION = 'ERROR_NOTIFICATION';
+
+export const SET_USERS = 'SET_USERS';
+export const CLEAR_USERS = 'CLEAR_USERS';
+
+export const SET_REPOS = 'SET_REPOS';
+export const SET_SINGLE_REPO = 'SET_SINGLE_REPO';
+export const CLEAR_REPOS = 'CLEAR_REPOS';

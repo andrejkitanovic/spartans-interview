@@ -1,0 +1,18 @@
+@function ease($easetype) {
+	$easing: (
+		'fluid': cubic-bezier(0.3, 0, 0.22, 1),
+		'normal': cubic-bezier(0.25, 0.1, 0.25, 0.1),
+	);
+
+	@if map-has-key($easing, $easetype) == false {
+		@error 'Invalid ease type: `#{$easetype}`';
+	}
+
+	@return map-get($easing, $easetype);
+}
+
+%lines-overflow{
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}

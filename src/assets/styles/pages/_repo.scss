@@ -1,0 +1,65 @@
+@import '../utils';
+
+.repo-page {
+	padding-top: 60px;
+	
+	&__container {
+	}
+
+	&__header {
+		line-height: 40px;
+	}
+
+	&__info {
+		width: 100%;
+		border: 2px solid $secondary-color;
+		height: 80vh;
+		max-height: 800px;
+		border-radius: 15px;
+		overflow: hidden;
+		padding: 15px;
+	}
+
+	&__stats {
+		float: right;
+	}
+
+	&__stat {
+		height: 40px;
+		width: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 2px solid $secondary-color;
+		border-radius: 10px;
+		margin-left: 10px;
+		overflow: hidden;
+	}
+
+	&__stat-icon,
+	&__stat-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+	}
+
+	&__stat-icon {
+		background-color: $primary-color;
+
+		svg {
+			font-size: 20px;
+		}
+	}
+
+	&__stat-text {
+		font-size: 14px;
+	}
+
+	&__description {
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid $secondary-color;
+	}
+}

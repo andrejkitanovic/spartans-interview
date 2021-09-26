@@ -1,0 +1,14 @@
+@import '../utils';
+
+.back-button {
+	width: 67px;
+	height: 67px;
+	border: 2px solid $secondary-color;
+	border-radius: 10px;
+	margin-bottom: 20px;
+
+	svg {
+		font-size: 25px;
+		color: $primary-color;
+	}
+}

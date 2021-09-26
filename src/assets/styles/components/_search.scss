@@ -1,0 +1,27 @@
+@import '../utils';
+
+.search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	border: 2px solid $secondary-color;
+	border-radius: 10px;
+
+	&__input {
+		width: 100%;
+		padding: 21px 18px;
+		color: #fff;
+		font-size: 18px;
+
+		&::placeholder {
+			color: #ffffffcc;
+		}
+	}
+
+	svg {
+		font-size: 25px;
+		margin-right: 20px;
+		color: $secondary-color;
+	}
+}
