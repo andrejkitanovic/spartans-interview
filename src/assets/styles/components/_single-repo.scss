@@ -21,7 +21,7 @@ $description-lines-to-show: 3;
 		font-size: 12px;
 		margin-bottom: 30px;
 		height: 42px;
-		
+		overflow: hidden;
 		-webkit-line-clamp: $description-lines-to-show;
 		@extend %lines-overflow;
 	}
